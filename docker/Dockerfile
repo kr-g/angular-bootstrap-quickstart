@@ -1,6 +1,7 @@
 FROM anothersoftwaredevelopmentblog/docker-node-centos:centos7
 
 RUN n 7.10.0
+RUN npm install -g @angular/cli
 
 ADD *.sh /
 RUN chmod +x /*.sh
