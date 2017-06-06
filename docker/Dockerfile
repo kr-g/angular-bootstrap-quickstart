@@ -2,6 +2,7 @@ FROM anothersoftwaredevelopmentblog/docker-node-centos:centos7
 
 RUN n 7.10.0
 RUN npm install -g @angular/cli
+RUN yum install -y chromium xorg-x11-server-Xvfb
 
 ADD *.sh /
 RUN chmod +x /*.sh
